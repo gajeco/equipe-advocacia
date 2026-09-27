@@ -12,14 +12,14 @@ Sem build, sem dependências, sem requisições a terceiros: basta abrir o `inde
 Como abrir
 
 ```bash
-# Opção 1 — abrir o arquivo direto
+Opção 1 — abrir o arquivo direto
 start index.html          # Windows
 xdg-open index.html      # Linux
 open index.html           # macOS
 
-# Opção 2 — servidor local (recomendado, evita restrições de file://)
+Opção 2 — servidor local (recomendado, evita restrições de file://)
 python -m http.server 8000
-# depois acesse http://localhost:8000
+depois acesse http://localhost:8000
 ```
 
 Para publicar, envie a pasta inteira para qualquer hospedagem estática
@@ -32,17 +32,17 @@ Estrutura
 
 ```
 page/
-├── index.html          # toda a página (conteúdo estático, bom para SEO)
+├── index.html          toda a página (conteúdo estático, bom para SEO)
 ├── css/
-│   ├── base.css        # reset, tokens de design, tipografia, utilitários, a11y
-│   ├── components.css  # botões, cards, header, menu, forms, accordion, modal…
-│   └── sections.css    # estilos de cada seção da landing page
+│   ├── base.css        reset, tokens de design, tipografia, utilitários, a11y
+│   ├── components.css  botões, cards, header, menu, forms, accordion, modal…
+│   └── sections.css    estilos de cada seção da landing page
 ├── js/
-│   ├── config.js       # ← FONTE ÚNICA DOS DADOS DO ESCRITÓRIO
-│   └── main.js         # toda a interatividade (12 módulos)
+│   ├── config.js       ← FONTE ÚNICA DOS DADOS DO ESCRITÓRIO
+│   └── main.js         toda a interatividade (12 módulos)
 ├── assets/
-│   ├── favicon.svg     # ícone do navegador
-│   └── og-image.svg    # imagem de compartilhamento (exportar para PNG)
+│   ├── favicon.svg     ícone do navegador
+│   └── og-image.svg    imagem de compartilhamento (exportar para PNG)
 ├── robots.txt
 └── sitemap.xml
 ```
@@ -126,9 +126,9 @@ estruturada e abre o WhatsApp em uma nova aba:
 ```
 Olá! Gostaria de solicitar uma consulta com um advogado.
 
-*Nome:* ...
-*Contato:* ...
-*Área de atuação:* ...
+Nome:...
+Contato: ...
+Área de atuação: ...
 
 relato do caso
 ```
