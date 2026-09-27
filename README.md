@@ -1,4 +1,4 @@
-Landing page — Escritório de Advocacia
+# Landing page — Escritório de Advocacia
 
 Página de apresentação para escritório de advocacia, em **HTML, CSS e JavaScript puros**.
 Sem build, sem dependências, sem requisições a terceiros: basta abrir o `index.html`.
@@ -9,17 +9,17 @@ Sem build, sem dependências, sem requisições a terceiros: basta abrir o `inde
 
 ---
 
-Como abrir
+## Como abrir
 
 ```bash
-Opção 1 — abrir o arquivo direto
+# Opção 1 — abrir o arquivo direto
 start index.html          # Windows
 xdg-open index.html      # Linux
 open index.html           # macOS
 
-Opção 2 — servidor local (recomendado, evita restrições de file://)
+# Opção 2 — servidor local (recomendado, evita restrições de file://)
 python -m http.server 8000
-depois acesse http://localhost:8000
+# depois acesse http://localhost:8000
 ```
 
 Para publicar, envie a pasta inteira para qualquer hospedagem estática
@@ -28,30 +28,30 @@ vão exatamente como estão.
 
 ---
 
-Estrutura
+## Estrutura
 
 ```
 page/
-├── index.html          toda a página (conteúdo estático, bom para SEO)
+├── index.html          # toda a página (conteúdo estático, bom para SEO)
 ├── css/
-│   ├── base.css        reset, tokens de design, tipografia, utilitários, a11y
-│   ├── components.css  botões, cards, header, menu, forms, accordion, modal…
-│   └── sections.css    estilos de cada seção da landing page
+│   ├── base.css        # reset, tokens de design, tipografia, utilitários, a11y
+│   ├── components.css  # botões, cards, header, menu, forms, accordion, modal…
+│   └── sections.css    # estilos de cada seção da landing page
 ├── js/
-│   ├── config.js       ← FONTE ÚNICA DOS DADOS DO ESCRITÓRIO
-│   └── main.js         toda a interatividade (12 módulos)
+│   ├── config.js       # ← FONTE ÚNICA DOS DADOS DO ESCRITÓRIO
+│   └── main.js         # toda a interatividade (12 módulos)
 ├── assets/
-│   ├── favicon.svg     ícone do navegador
-│   └── og-image.svg    imagem de compartilhamento (exportar para PNG)
+│   ├── favicon.svg     # ícone do navegador
+│   └── og-image.svg    # imagem de compartilhamento (exportar para PNG)
 ├── robots.txt
 └── sitemap.xml
 ```
 
 ---
 
-O que editar primeiro
+## O que editar primeiro
 
-1. `js/config.js` — dados do escritório
+### 1. `js/config.js` — dados do escritório
 
 É o único lugar onde você troca nome, contatos, endereço, redes, SEO e as
 mensagens dos botões de WhatsApp:
@@ -77,7 +77,7 @@ mensagens dos botões de WhatsApp:
 > conteúdo. Se você alterar um valor no `config.js`, **mantenha o texto do HTML
 > igual** — ou rode a página e copie os valores atualizados.
 
-2. `index.html` — textos e seções
+### 2. `index.html` — textos e seções
 
 Procure por `EDIT:` no arquivo. Há marcações em:
 
@@ -87,11 +87,11 @@ Procure por `EDIT:` no arquivo. Há marcações em:
 - Conteúdo dos modais legais (Política de Privacidade, Termos, Cookies)
 - Depoimentos — hoje com aviso de "conteúdo ilustrativo"
 
-3. `robots.txt` e `sitemap.xml`
+### 3. `robots.txt` e `sitemap.xml`
 
 Troque `https://exemplo.com.br` pelo domínio real e atualize a `<lastmod>`.
 
-4. Imagem de compartilhamento (OG)
+### 4. Imagem de compartilhamento (OG)
 
 O `index.html` referencia `assets/og-image.png`, porque a maioria dos
 aplicativos (WhatsApp, Facebook, X, LinkedIn) **não aceita SVG**. O arquivo
@@ -101,7 +101,7 @@ com o nome `og-image.png`.
 
 ---
 
-Seções da página
+## Seções da página
 
 | # | Seção | Âncora |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ Seções da página
 
 ---
 
-Como o formulário funciona
+## Como o formulário funciona
 
 O formulário **não tem back-end**. Ao validar, ele monta uma mensagem
 estruturada e abre o WhatsApp em uma nova aba:
@@ -126,9 +126,9 @@ estruturada e abre o WhatsApp em uma nova aba:
 ```
 Olá! Gostaria de solicitar uma consulta com um advogado.
 
-Nome:...
-Contato: ...
-Área de atuação: ...
+*Nome:* ...
+*Contato:* ...
+*Área de atuação:* ...
 
 relato do caso
 ```
@@ -140,7 +140,7 @@ adapte a função de validação de e-mail.
 
 ---
 
-Acessibilidade e performance
+## Acessibilidade e performance
 
 - Navegação completa por teclado, com skip link e foco visível
 - Menu mobile com trava de foco, `inert` e fechamento por `Esc`
@@ -156,7 +156,7 @@ com um leitor de tela — as Diretrizes WCAG 2.2 AA são o padrão de referênci
 
 ---
 
-Checklist de publicação
+## Checklist de publicação
 
 - [ ] `js/config.js` com nome, contatos, endereço e domínio reais
 - [ ] Textos fallback do `index.html` iguais aos do `config.js`
