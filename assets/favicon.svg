@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Almeida e Prado">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16294a" />
+      <stop offset="1" stop-color="#060e1b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="url(#bg)" />
+
+  <g
+    fill="none"
+    stroke="#c8a45c"
+    stroke-width="2.4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <circle cx="32" cy="13" r="3.4" />
+    <path d="M32 16.5v32" />
+    <path d="M16 22.5h32" />
+    <path d="M16 22.5 9.5 35M16 22.5 22.5 35" />
+    <path d="M9.5 35a6.5 4.6 0 0 0 13 0" />
+    <path d="M48 22.5 41.5 35M48 22.5 54.5 35" />
+    <path d="M41.5 35a6.5 4.6 0 0 0 13 0" />
+    <path d="M23 48.5h18" />
+    <path d="M27 48.5 32 54l5-5.5" />
+  </g>
+</svg>
