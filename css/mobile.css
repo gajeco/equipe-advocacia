@@ -474,8 +474,7 @@
   }
 
   .fab {
-    bottom: 5.25rem;
-    padding: 0.95rem;
+    display: none;
   }
 }
 
