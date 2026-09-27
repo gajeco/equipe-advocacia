@@ -472,10 +472,6 @@
   .sticky-cta .btn {
     min-height: 3rem;
   }
-
-  .fab {
-    display: none;
-  }
 }
 
 @media (max-width: 33.99rem) {
